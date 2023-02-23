@@ -6,7 +6,7 @@ public class BarMovementScriptP2 : MonoBehaviour
 {
     private float HORIZONTAL_OFFSET = 9.5f;
     private float VERTICAL_BOUNDARY = 4.45f;
-    public float movementSpeed = 5;
+    public float movementSpeed = 7;
 
     // Start is called before the first frame update
     void Start()
