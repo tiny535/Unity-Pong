@@ -15,7 +15,7 @@ public class BallScript : MonoBehaviour
     void Start()
     {
         scoreScript = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreScript>();
-        spawnBall();
+        StartCoroutine(DelayedSpawner());
     }
 
     // Update is called once per frame
@@ -35,5 +35,10 @@ public class BallScript : MonoBehaviour
     private void spawnBall() {
         transform.position = new Vector3(0, Random.Range(-VERTICAL_BOUNDARY, VERTICAL_BOUNDARY), 0);
         ballRigidBody.velocity = new Vector2(horizontalVelocity, Random.Range(-verticalVelocity, verticalVelocity));
+    }
+
+    IEnumerator DelayedSpawner() {
+        yield return new WaitForSeconds(0.5f);
+        spawnBall();
     }
 }
