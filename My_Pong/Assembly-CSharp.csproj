@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\BarMovementScriptP2.cs" />
+     <Compile Include="Assets\PauseMenuController.cs" />
      <Compile Include="Assets\BarMovementScriptP1.cs" />
      <Compile Include="Assets\BallScript.cs" />
      <Compile Include="Assets\ScoreScript.cs" />
